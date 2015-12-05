@@ -1,0 +1,32 @@
+h1 {
+	font-family: 'Architects Daughter', cursive;
+	color: #fff;
+}
+
+body {
+	background: green;
+}
+
+.error {
+	color: #fff;
+	font-family: 'Architects Daughter', cursive;
+}
+
+button {
+	background: lightblue;
+	color: darkblue;
+	font-weight: bold;
+	-webkit-border-radius: 0.5em;
+	border: none;
+}
+
+input#input{
+	background: darkblue;
+	border: none;
+	height: 1.5em;
+}
+
+input::-webkit-input-placeholder {
+	color: #fff;
+	text-transform: uppercase;
+}
