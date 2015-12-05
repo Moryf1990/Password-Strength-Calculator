@@ -17,10 +17,15 @@ button {
   border: none; }
 
 input#input {
-  background: darkblue;
+  background: yellow;
   border: none;
-  height: 1.5em; }
+  height: 1.5em;
+  padding-left: 0.5em;
+  color: red;
+  font-weight: bold; }
 
 input::-webkit-input-placeholder {
-  color: #fff;
+  padding-left: 0.5em;
+  color: red;
+  font-weight: bold;
   text-transform: uppercase; }
