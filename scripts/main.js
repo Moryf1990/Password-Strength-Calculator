@@ -1,13 +1,15 @@
 'use strict';
 var form = $('#form');
+var button = $('#button');
 
-form.on('submit', function(passwordValidator) {
+button.on('click', function(passwordValidator) {
 	passwordValidator.preventDefault();
 	var input = $('#input');
 	var error1 = $('#error1');
 	var error2 = $('#error2');
 	var error3 = $('#error3');
 	var error4 = $('#error4');
+	var error5 = $('#error5');
 	var char = input.val();
 
 	error1.hide();
@@ -17,6 +19,10 @@ form.on('submit', function(passwordValidator) {
 
 	if (char === 'password') {
 		window.location = 'http://theironyard.com';
+	}
+
+	if (char === '') {
+		error5.html('Please enter a valid password.');
 	}
 
 	if(/^[a-z0-9!-/:-@[-`{-~]+$/i.test(char) && char.length >= 8) {
@@ -63,4 +69,5 @@ form.on('submit', function(passwordValidator) {
 		error3.hide();
 		error4.hide();
 	}
+
 });
