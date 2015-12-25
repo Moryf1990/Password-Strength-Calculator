@@ -15,6 +15,10 @@ form.on('submit', function(passwordValidator) {
 	error3.hide();
 	error4.hide();
 
+	if (char === 'password') {
+		window.location = 'http://theironyard.com';
+	}
+
 	if(/^[a-z0-9!-/:-@[-`{-~]+$/i.test(char) && char.length >= 8) {
 		error4.html('The password ' + char + ' is a very strong password').show();
 	}
