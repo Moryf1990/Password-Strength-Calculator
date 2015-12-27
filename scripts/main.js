@@ -16,8 +16,9 @@ button.on('click', function(passwordValidator) {
 	error2.hide();
 	error3.hide();
 	error4.hide();
+	error5.hide();
 
-	if (char === 'password') {
+	if (char === 'password' || char === 'PASSWORD') {
 		window.location = 'http://theironyard.com';
 	}
 
@@ -52,7 +53,7 @@ button.on('click', function(passwordValidator) {
 		error1.html('The password ' + char + ' is a very weak password.').show();
 	}
 
-	if(/^[!-/:-@[-`{-~a-z]+$/.test(char) && char.length > 0) {
+	if(/^[!-/:-@[-`{-~a-z]+$/i.test(char) && char.length > 0) {
 		error1.hide();
 		error2.hide();
 		error3.hide();
