@@ -18,11 +18,11 @@ button.on('click', function(passwordValidator) {
 	error4.hide();
 	error5.hide();
 
-	if (char === 'password' || char === 'PASSWORD') {
+	if(char === 'password' || char === 'PASSWORD') {
 		window.location = 'http://theironyard.com';
 	}
 
-	if (char === '') {
+	if(char === '') {
 		error5.html('Please enter a valid password.');
 	}
 
